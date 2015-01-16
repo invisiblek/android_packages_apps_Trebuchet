@@ -5406,9 +5406,7 @@ public class Launcher extends Activity
     }
 
     public boolean isRotationEnabled() {
-        boolean enableRotation = sForceEnableRotation ||
-                getResources().getBoolean(R.bool.allow_rotation);
-        return enableRotation;
+        return true;
     }
     public void lockScreenOrientation() {
         if (isRotationEnabled()) {
